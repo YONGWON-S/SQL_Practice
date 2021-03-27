@@ -1,0 +1,6 @@
+SELECT SupplierID
+	   , CategoryID
+     , AVG(Price) as average /*AVG(Price) 를 앞으로 average로 가져온다 */
+FROM Products
+Group by SupplierID, CategoryID
+Having average > 100 /* Group by 뒤에 where절 대신 having을 써서 분류한다. 여기서 average는 AVG(Price)를 가르킨다. */
