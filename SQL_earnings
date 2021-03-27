@@ -1,0 +1,5 @@
+Select (months * salary) as earnings, count(*)
+From Employee
+Group by earnings DESC
+Limit 1
+-- total earnings를 구한 다음 가장 많은 돈을 번 직원수와 그 earning을 나타내는 문법
