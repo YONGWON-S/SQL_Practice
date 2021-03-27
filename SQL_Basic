@@ -1,0 +1,5 @@
+-- Where, Order by, RIGHT, LEFT, Substr
+Select Name
+From Students
+Where Marks > 75
+Order by RIGHT(Name, 3), ID;
